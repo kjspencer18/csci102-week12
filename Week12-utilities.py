@@ -14,3 +14,12 @@ def LoadFile(file_name):
             lines.append(line)
     return lines
 
+def UpdateString(str_1, str_2, num):
+    new_str = ""
+    for i in range(len(str_1)):
+        if i == num:
+            new_str += str_2
+        else:
+            new_str += str_1[i]
+    print(new_str)
+    
