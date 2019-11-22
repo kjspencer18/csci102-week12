@@ -23,3 +23,10 @@ def UpdateString(str_1, str_2, num):
             new_str += str_1[i]
     print(new_str)
     
+def FindWordCount(my_list, my_str):
+    count = 0
+    for i in my_list:
+        for j in i:
+            if my_str in j:
+                count += 1
+    return count
