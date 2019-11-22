@@ -49,3 +49,10 @@ def Union(l1, l2):
         if j not in l3:
             l3.append(j)   
     return l3
+
+def Intersection(l1, l2):
+    l3 = []
+    for i in l1:
+        if i in l2:
+            l3 += [i]
+    return l3
