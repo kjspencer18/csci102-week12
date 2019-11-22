@@ -6,3 +6,11 @@
 def PrintOutput(str):
     print('OUTPUT', str)
     
+def LoadFile(file_name):
+    lines = []
+    with open(file_name) as file:
+        for line in file:
+            line = line.strip()
+            lines.append(line)
+    return lines
+
